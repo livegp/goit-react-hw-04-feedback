@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Table = styled.table`
+const Table = styled.table`
   text-align: center;
   overflow: hidden;
 
@@ -18,3 +18,5 @@ export const Table = styled.table`
     color: #f7f7f7;
   }
 `;
+
+export default Table;

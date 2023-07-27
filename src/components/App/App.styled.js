@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+const Container = styled.div`
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   display: flex;
@@ -11,3 +11,5 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 20px 16px;
 `;
+
+export default Container;

@@ -1,20 +1,21 @@
 import { Component } from 'react';
-import { Container } from './App.styled';
-import FeedbackOptions from 'components/FeedbackOptions/FeedbackOptions';
-import Notification from 'components/Notification/Notification';
-import Section from 'components/Section/Section';
-import Statistics from 'components/Statistics/Statistics';
+
+import Container from './App.styled';
+import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
+import Notification from '../Notification/Notification';
+import Section from '../Section/Section';
+import Statistics from '../Statistics/Statistics';
 
 class App extends Component {
   state = {
     bad: 0,
     good: 0,
-    neutral: 0,
+    neutral: 0
   };
 
   handleFeedback = option => {
     this.setState(prevState => ({
-      [option]: prevState[option] + 1,
+      [option]: prevState[option] + 1
     }));
   };
 
